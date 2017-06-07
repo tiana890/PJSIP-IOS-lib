@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PJSIP-IOS-lib_Tests' do
+  pod 'PJSIP-IOS-lib', :path => '../'
+  
+  
+end
