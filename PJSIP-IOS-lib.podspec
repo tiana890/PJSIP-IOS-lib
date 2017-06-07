@@ -28,16 +28,16 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/tiana890/PJSIP-IOS-lib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h,hpp}'
-  
+s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h, hpp}'
+  s.libraries 			= 'stdc++'
   # s.resource_bundles = {
   #   'PJSIP-IOS-lib' => ['PJSIP-IOS-lib/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/include/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = "AudioToolbox", "AVFoundation", "CFNetwork",  "CoreMedia"
   # s.dependency 'AFNetworking', '~> 2.3'
 
     s.xcconfig = {
