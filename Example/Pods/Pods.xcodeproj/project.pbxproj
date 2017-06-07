@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352230648349080F39CF6F1F53A49F15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3B2C2C8065F7DD631AE168DA3030E1AE /* Pods-PJSIP-IOS-lib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BAE27E3EA3222D529E6804C3D03DF3B /* Pods-PJSIP-IOS-lib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63191FF19EF8A5158A2169C8B7A6071D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		717782D7DE4241507213B120DD431A33 /* Pods-PJSIP-IOS-lib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B03FDE450E43D35852413FA93753A1 /* Pods-PJSIP-IOS-lib_Tests-dummy.m */; };
+		874A75BB8475B17EAFAB264D51403142 /* PJSIP-IOS-lib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96340C1EC16A1A189A54C6886BD8E3F4 /* PJSIP-IOS-lib-dummy.m */; };
+		9CDEE38D1EE83463000818C6 /* print_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3481EE83463000818C6 /* print_util.h */; };
+		9CDEE38E1EE83463000818C6 /* sip_auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3491EE83463000818C6 /* sip_auth.h */; };
+		9CDEE38F1EE83463000818C6 /* sip_auth_aka.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE34A1EE83463000818C6 /* sip_auth_aka.h */; };
+		9CDEE3901EE83463000818C6 /* sip_auth_msg.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE34B1EE83463000818C6 /* sip_auth_msg.h */; };
+		9CDEE3911EE83463000818C6 /* sip_auth_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE34C1EE83463000818C6 /* sip_auth_parser.h */; };
+		9CDEE3921EE83463000818C6 /* sip_autoconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE34D1EE83463000818C6 /* sip_autoconf.h */; };
+		9CDEE3931EE83463000818C6 /* sip_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE34F1EE83463000818C6 /* sip_config.h */; };
+		9CDEE3941EE83463000818C6 /* sip_dialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3501EE83463000818C6 /* sip_dialog.h */; };
+		9CDEE3951EE83463000818C6 /* sip_endpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3511EE83463000818C6 /* sip_endpoint.h */; };
+		9CDEE3961EE83463000818C6 /* sip_errno.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3521EE83463000818C6 /* sip_errno.h */; };
+		9CDEE3971EE83463000818C6 /* sip_event.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3531EE83463000818C6 /* sip_event.h */; };
+		9CDEE3981EE83463000818C6 /* sip_module.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3541EE83463000818C6 /* sip_module.h */; };
+		9CDEE3991EE83463000818C6 /* sip_msg.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3551EE83463000818C6 /* sip_msg.h */; };
+		9CDEE39A1EE83463000818C6 /* sip_multipart.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3561EE83463000818C6 /* sip_multipart.h */; };
+		9CDEE39B1EE83463000818C6 /* sip_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3571EE83463000818C6 /* sip_parser.h */; };
+		9CDEE39C1EE83463000818C6 /* sip_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3581EE83463000818C6 /* sip_private.h */; };
+		9CDEE39D1EE83463000818C6 /* sip_resolve.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3591EE83463000818C6 /* sip_resolve.h */; };
+		9CDEE39E1EE83463000818C6 /* sip_tel_uri.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE35A1EE83463000818C6 /* sip_tel_uri.h */; };
+		9CDEE39F1EE83463000818C6 /* sip_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE35B1EE83463000818C6 /* sip_transaction.h */; };
+		9CDEE3A01EE83463000818C6 /* sip_transport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE35C1EE83463000818C6 /* sip_transport.h */; };
+		9CDEE3A11EE83463000818C6 /* sip_transport_loop.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE35D1EE83463000818C6 /* sip_transport_loop.h */; };
+		9CDEE3A21EE83463000818C6 /* sip_transport_tcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE35E1EE83463000818C6 /* sip_transport_tcp.h */; };
+		9CDEE3A31EE83463000818C6 /* sip_transport_tls.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE35F1EE83463000818C6 /* sip_transport_tls.h */; };
+		9CDEE3A41EE83463000818C6 /* sip_transport_udp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3601EE83463000818C6 /* sip_transport_udp.h */; };
+		9CDEE3A51EE83463000818C6 /* sip_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3611EE83463000818C6 /* sip_types.h */; };
+		9CDEE3A61EE83463000818C6 /* sip_ua_layer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3621EE83463000818C6 /* sip_ua_layer.h */; };
+		9CDEE3A71EE83463000818C6 /* sip_uri.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3631EE83463000818C6 /* sip_uri.h */; };
+		9CDEE3A81EE83463000818C6 /* sip_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3641EE83463000818C6 /* sip_util.h */; };
+		9CDEE3A91EE83463000818C6 /* pjsip_auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3651EE83463000818C6 /* pjsip_auth.h */; };
+		9CDEE3AA1EE83463000818C6 /* pjsip_simple.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3661EE83463000818C6 /* pjsip_simple.h */; };
+		9CDEE3AB1EE83463000818C6 /* pjsip_ua.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3671EE83463000818C6 /* pjsip_ua.h */; };
+		9CDEE3AC1EE83463000818C6 /* errno.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3691EE83463000818C6 /* errno.h */; };
+		9CDEE3AD1EE83463000818C6 /* evsub.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE36A1EE83463000818C6 /* evsub.h */; };
+		9CDEE3AE1EE83463000818C6 /* evsub_msg.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE36B1EE83463000818C6 /* evsub_msg.h */; };
+		9CDEE3AF1EE83463000818C6 /* iscomposing.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE36C1EE83463000818C6 /* iscomposing.h */; };
+		9CDEE3B01EE83463000818C6 /* mwi.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE36D1EE83463000818C6 /* mwi.h */; };
+		9CDEE3B11EE83463000818C6 /* pidf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE36E1EE83463000818C6 /* pidf.h */; };
+		9CDEE3B21EE83463000818C6 /* presence.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE36F1EE83463000818C6 /* presence.h */; };
+		9CDEE3B31EE83463000818C6 /* publish.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3701EE83463000818C6 /* publish.h */; };
+		9CDEE3B41EE83463000818C6 /* rpid.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3711EE83463000818C6 /* rpid.h */; };
+		9CDEE3B51EE83463000818C6 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3721EE83463000818C6 /* types.h */; };
+		9CDEE3B61EE83463000818C6 /* xpidf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3731EE83463000818C6 /* xpidf.h */; };
+		9CDEE3B71EE83463000818C6 /* sip_100rel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3751EE83463000818C6 /* sip_100rel.h */; };
+		9CDEE3B81EE83463000818C6 /* sip_inv.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3761EE83463000818C6 /* sip_inv.h */; };
+		9CDEE3B91EE83463000818C6 /* sip_regc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3771EE83463000818C6 /* sip_regc.h */; };
+		9CDEE3BA1EE83463000818C6 /* sip_replaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3781EE83463000818C6 /* sip_replaces.h */; };
+		9CDEE3BB1EE83463000818C6 /* sip_timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3791EE83463000818C6 /* sip_timer.h */; };
+		9CDEE3BC1EE83463000818C6 /* sip_xfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE37A1EE83463000818C6 /* sip_xfer.h */; };
+		9CDEE3BD1EE83463000818C6 /* pjsip.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE37B1EE83463000818C6 /* pjsip.h */; };
+		9CDEE3BE1EE83463000818C6 /* pjsua.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE37D1EE83463000818C6 /* pjsua.h */; };
+		9CDEE3BF1EE83463000818C6 /* pjsua_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE37E1EE83463000818C6 /* pjsua_internal.h */; };
+		9CDEE3C01EE83463000818C6 /* pjsua.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE37F1EE83463000818C6 /* pjsua.h */; };
+		9CDEE3C11EE83463000818C6 /* account.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3811EE83463000818C6 /* account.hpp */; };
+		9CDEE3C21EE83463000818C6 /* call.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3821EE83463000818C6 /* call.hpp */; };
+		9CDEE3C31EE83463000818C6 /* config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3831EE83463000818C6 /* config.hpp */; };
+		9CDEE3C41EE83463000818C6 /* doxygen.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3841EE83463000818C6 /* doxygen.hpp */; };
+		9CDEE3C51EE83463000818C6 /* endpoint.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3851EE83463000818C6 /* endpoint.hpp */; };
+		9CDEE3C61EE83463000818C6 /* json.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3861EE83463000818C6 /* json.hpp */; };
+		9CDEE3C71EE83463000818C6 /* media.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3871EE83463000818C6 /* media.hpp */; };
+		9CDEE3C81EE83463000818C6 /* persistent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3881EE83463000818C6 /* persistent.hpp */; };
+		9CDEE3C91EE83463000818C6 /* presence.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE3891EE83463000818C6 /* presence.hpp */; };
+		9CDEE3CA1EE83463000818C6 /* siptypes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE38A1EE83463000818C6 /* siptypes.hpp */; };
+		9CDEE3CB1EE83463000818C6 /* types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE38B1EE83463000818C6 /* types.hpp */; };
+		9CDEE3CC1EE83463000818C6 /* pjsua2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9CDEE38C1EE83463000818C6 /* pjsua2.hpp */; };
+		9CDEE3E31EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3D91EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a */; };
+		9CDEE3E41EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DA1EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a */; };
+		9CDEE3E51EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DB1EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a */; };
+		9CDEE3E61EE83BC0000818C6 /* libpjsip-simple-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DC1EE83BC0000818C6 /* libpjsip-simple-i386-apple-darwin_ios.a */; };
+		9CDEE3E71EE83BC0000818C6 /* libpjsip-ua-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DD1EE83BC0000818C6 /* libpjsip-ua-armv7-apple-darwin_ios.a */; };
+		9CDEE3E81EE83BC0000818C6 /* libpjsip-ua-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DE1EE83BC0000818C6 /* libpjsip-ua-i386-apple-darwin_ios.a */; };
+		9CDEE3E91EE83BC0000818C6 /* libpjsua-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DF1EE83BC0000818C6 /* libpjsua-armv7-apple-darwin_ios.a */; };
+		9CDEE3EA1EE83BC0000818C6 /* libpjsua-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3E01EE83BC0000818C6 /* libpjsua-i386-apple-darwin_ios.a */; };
+		9CDEE3EB1EE83BC0000818C6 /* libpjsua2-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3E11EE83BC0000818C6 /* libpjsua2-armv7-apple-darwin_ios.a */; };
+		9CDEE3EC1EE83BC0000818C6 /* libpjsua2-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3E21EE83BC0000818C6 /* libpjsua2-i386-apple-darwin_ios.a */; };
+		B320844378F82E0BA0152CA2E921610D /* PJSIP-IOS-lib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 407F716F7601B30280FD5DC8D0E35B29 /* PJSIP-IOS-lib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A223A8C0415469CCCF65EC55CE6D60CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1D69677A73C65709A3D909C3A3EF42;
+			remoteInfo = "PJSIP-IOS-lib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19E63DA72E3AA5A47F39EDC24293C42D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2960A19FA18439BCFE07EF7C2CC26BFA /* PJSIP-IOS-lib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PJSIP-IOS-lib-prefix.pch"; sourceTree = "<group>"; };
+		2BE18EB3C273090AA320B0147E340F94 /* Pods-PJSIP-IOS-lib_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PJSIP-IOS-lib_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		37E8E1EA0FA051F23C2C5CE226C56F05 /* PJSIP-IOS-lib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PJSIP-IOS-lib.xcconfig"; sourceTree = "<group>"; };
+		407F716F7601B30280FD5DC8D0E35B29 /* PJSIP-IOS-lib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PJSIP-IOS-lib-umbrella.h"; sourceTree = "<group>"; };
+		45AC2A5EE24B70BFC2B4FC90D12D44C2 /* Pods-PJSIP-IOS-lib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PJSIP-IOS-lib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		57B03FDE450E43D35852413FA93753A1 /* Pods-PJSIP-IOS-lib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PJSIP-IOS-lib_Tests-dummy.m"; sourceTree = "<group>"; };
+		5BAE27E3EA3222D529E6804C3D03DF3B /* Pods-PJSIP-IOS-lib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PJSIP-IOS-lib_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5DC27A805B0F46E4918B9AC4C292B6ED /* Pods-PJSIP-IOS-lib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PJSIP-IOS-lib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71ACD6E39EDF8ECBAEC1159C7C5D1CBE /* Pods-PJSIP-IOS-lib_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PJSIP-IOS-lib_Tests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B8870ADCB37E960DD93CDBA9717CA9 /* Pods-PJSIP-IOS-lib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PJSIP-IOS-lib_Tests.modulemap"; sourceTree = "<group>"; };
+		96340C1EC16A1A189A54C6886BD8E3F4 /* PJSIP-IOS-lib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PJSIP-IOS-lib-dummy.m"; sourceTree = "<group>"; };
+		9B5F1BD28DFD8FFE34806CF905E4DC10 /* Pods-PJSIP-IOS-lib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PJSIP-IOS-lib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CDEE3481EE83463000818C6 /* print_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print_util.h; sourceTree = "<group>"; };
+		9CDEE3491EE83463000818C6 /* sip_auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_auth.h; sourceTree = "<group>"; };
+		9CDEE34A1EE83463000818C6 /* sip_auth_aka.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_auth_aka.h; sourceTree = "<group>"; };
+		9CDEE34B1EE83463000818C6 /* sip_auth_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_auth_msg.h; sourceTree = "<group>"; };
+		9CDEE34C1EE83463000818C6 /* sip_auth_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_auth_parser.h; sourceTree = "<group>"; };
+		9CDEE34D1EE83463000818C6 /* sip_autoconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_autoconf.h; sourceTree = "<group>"; };
+		9CDEE34E1EE83463000818C6 /* sip_autoconf.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sip_autoconf.h.in; sourceTree = "<group>"; };
+		9CDEE34F1EE83463000818C6 /* sip_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_config.h; sourceTree = "<group>"; };
+		9CDEE3501EE83463000818C6 /* sip_dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_dialog.h; sourceTree = "<group>"; };
+		9CDEE3511EE83463000818C6 /* sip_endpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_endpoint.h; sourceTree = "<group>"; };
+		9CDEE3521EE83463000818C6 /* sip_errno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_errno.h; sourceTree = "<group>"; };
+		9CDEE3531EE83463000818C6 /* sip_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_event.h; sourceTree = "<group>"; };
+		9CDEE3541EE83463000818C6 /* sip_module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_module.h; sourceTree = "<group>"; };
+		9CDEE3551EE83463000818C6 /* sip_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_msg.h; sourceTree = "<group>"; };
+		9CDEE3561EE83463000818C6 /* sip_multipart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_multipart.h; sourceTree = "<group>"; };
+		9CDEE3571EE83463000818C6 /* sip_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_parser.h; sourceTree = "<group>"; };
+		9CDEE3581EE83463000818C6 /* sip_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_private.h; sourceTree = "<group>"; };
+		9CDEE3591EE83463000818C6 /* sip_resolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_resolve.h; sourceTree = "<group>"; };
+		9CDEE35A1EE83463000818C6 /* sip_tel_uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_tel_uri.h; sourceTree = "<group>"; };
+		9CDEE35B1EE83463000818C6 /* sip_transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_transaction.h; sourceTree = "<group>"; };
+		9CDEE35C1EE83463000818C6 /* sip_transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_transport.h; sourceTree = "<group>"; };
+		9CDEE35D1EE83463000818C6 /* sip_transport_loop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_transport_loop.h; sourceTree = "<group>"; };
+		9CDEE35E1EE83463000818C6 /* sip_transport_tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_transport_tcp.h; sourceTree = "<group>"; };
+		9CDEE35F1EE83463000818C6 /* sip_transport_tls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_transport_tls.h; sourceTree = "<group>"; };
+		9CDEE3601EE83463000818C6 /* sip_transport_udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_transport_udp.h; sourceTree = "<group>"; };
+		9CDEE3611EE83463000818C6 /* sip_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_types.h; sourceTree = "<group>"; };
+		9CDEE3621EE83463000818C6 /* sip_ua_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_ua_layer.h; sourceTree = "<group>"; };
+		9CDEE3631EE83463000818C6 /* sip_uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_uri.h; sourceTree = "<group>"; };
+		9CDEE3641EE83463000818C6 /* sip_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_util.h; sourceTree = "<group>"; };
+		9CDEE3651EE83463000818C6 /* pjsip_auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsip_auth.h; sourceTree = "<group>"; };
+		9CDEE3661EE83463000818C6 /* pjsip_simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsip_simple.h; sourceTree = "<group>"; };
+		9CDEE3671EE83463000818C6 /* pjsip_ua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsip_ua.h; sourceTree = "<group>"; };
+		9CDEE3691EE83463000818C6 /* errno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errno.h; sourceTree = "<group>"; };
+		9CDEE36A1EE83463000818C6 /* evsub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evsub.h; sourceTree = "<group>"; };
+		9CDEE36B1EE83463000818C6 /* evsub_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evsub_msg.h; sourceTree = "<group>"; };
+		9CDEE36C1EE83463000818C6 /* iscomposing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iscomposing.h; sourceTree = "<group>"; };
+		9CDEE36D1EE83463000818C6 /* mwi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mwi.h; sourceTree = "<group>"; };
+		9CDEE36E1EE83463000818C6 /* pidf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pidf.h; sourceTree = "<group>"; };
+		9CDEE36F1EE83463000818C6 /* presence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = presence.h; sourceTree = "<group>"; };
+		9CDEE3701EE83463000818C6 /* publish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publish.h; sourceTree = "<group>"; };
+		9CDEE3711EE83463000818C6 /* rpid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpid.h; sourceTree = "<group>"; };
+		9CDEE3721EE83463000818C6 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		9CDEE3731EE83463000818C6 /* xpidf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpidf.h; sourceTree = "<group>"; };
+		9CDEE3751EE83463000818C6 /* sip_100rel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_100rel.h; sourceTree = "<group>"; };
+		9CDEE3761EE83463000818C6 /* sip_inv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_inv.h; sourceTree = "<group>"; };
+		9CDEE3771EE83463000818C6 /* sip_regc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_regc.h; sourceTree = "<group>"; };
+		9CDEE3781EE83463000818C6 /* sip_replaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_replaces.h; sourceTree = "<group>"; };
+		9CDEE3791EE83463000818C6 /* sip_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_timer.h; sourceTree = "<group>"; };
+		9CDEE37A1EE83463000818C6 /* sip_xfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sip_xfer.h; sourceTree = "<group>"; };
+		9CDEE37B1EE83463000818C6 /* pjsip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsip.h; sourceTree = "<group>"; };
+		9CDEE37D1EE83463000818C6 /* pjsua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua.h; sourceTree = "<group>"; };
+		9CDEE37E1EE83463000818C6 /* pjsua_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua_internal.h; sourceTree = "<group>"; };
+		9CDEE37F1EE83463000818C6 /* pjsua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pjsua.h; sourceTree = "<group>"; };
+		9CDEE3811EE83463000818C6 /* account.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = account.hpp; sourceTree = "<group>"; };
+		9CDEE3821EE83463000818C6 /* call.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = call.hpp; sourceTree = "<group>"; };
+		9CDEE3831EE83463000818C6 /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		9CDEE3841EE83463000818C6 /* doxygen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = doxygen.hpp; sourceTree = "<group>"; };
+		9CDEE3851EE83463000818C6 /* endpoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = endpoint.hpp; sourceTree = "<group>"; };
+		9CDEE3861EE83463000818C6 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		9CDEE3871EE83463000818C6 /* media.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = media.hpp; sourceTree = "<group>"; };
+		9CDEE3881EE83463000818C6 /* persistent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = persistent.hpp; sourceTree = "<group>"; };
+		9CDEE3891EE83463000818C6 /* presence.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = presence.hpp; sourceTree = "<group>"; };
+		9CDEE38A1EE83463000818C6 /* siptypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = siptypes.hpp; sourceTree = "<group>"; };
+		9CDEE38B1EE83463000818C6 /* types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = types.hpp; sourceTree = "<group>"; };
+		9CDEE38C1EE83463000818C6 /* pjsua2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pjsua2.hpp; sourceTree = "<group>"; };
+		9CDEE3D91EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3DA1EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3DB1EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3DC1EE83BC0000818C6 /* libpjsip-simple-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3DD1EE83BC0000818C6 /* libpjsip-ua-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3DE1EE83BC0000818C6 /* libpjsip-ua-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3DF1EE83BC0000818C6 /* libpjsua-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3E01EE83BC0000818C6 /* libpjsua-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3E11EE83BC0000818C6 /* libpjsua2-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9CDEE3E21EE83BC0000818C6 /* libpjsua2-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		BA60FD697EA4926E4E7DC08D8B03AFC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC255CB960A2DA926F205B5A03D1C632 /* PJSIP_IOS_lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PJSIP_IOS_lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D366012A21909C90AFF1FD9A8C726BED /* Pods_PJSIP_IOS_lib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJSIP_IOS_lib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D7BEFB8C3518DD42A92453DD222B70 /* PJSIP-IOS-lib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "PJSIP-IOS-lib.modulemap"; sourceTree = "<group>"; };
+		E40790409827831F7887DBEE290CA886 /* Pods-PJSIP-IOS-lib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PJSIP-IOS-lib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F6D68AFDA8FD2568F97DD7A4917F20F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDEE3E71EE83BC0000818C6 /* libpjsip-ua-armv7-apple-darwin_ios.a in Frameworks */,
+				9CDEE3E81EE83BC0000818C6 /* libpjsip-ua-i386-apple-darwin_ios.a in Frameworks */,
+				9CDEE3EA1EE83BC0000818C6 /* libpjsua-i386-apple-darwin_ios.a in Frameworks */,
+				9CDEE3E51EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a in Frameworks */,
+				9CDEE3EB1EE83BC0000818C6 /* libpjsua2-armv7-apple-darwin_ios.a in Frameworks */,
+				9CDEE3EC1EE83BC0000818C6 /* libpjsua2-i386-apple-darwin_ios.a in Frameworks */,
+				9CDEE3E31EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a in Frameworks */,
+				63191FF19EF8A5158A2169C8B7A6071D /* Foundation.framework in Frameworks */,
+				9CDEE3E91EE83BC0000818C6 /* libpjsua-armv7-apple-darwin_ios.a in Frameworks */,
+				9CDEE3E41EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a in Frameworks */,
+				9CDEE3E61EE83BC0000818C6 /* libpjsip-simple-i386-apple-darwin_ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9ABB7FED2FA868201A7DD810A528DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352230648349080F39CF6F1F53A49F15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D55307658AB0C348A78E19631A1C7C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3CE1EE834B9000818C6 /* lib */,
+				9CDEE3CD1EE834A7000818C6 /* include */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0E0818E443E87500F023CF6D3C26DF82 /* Pods-PJSIP-IOS-lib_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				19E63DA72E3AA5A47F39EDC24293C42D /* Info.plist */,
+				95B8870ADCB37E960DD93CDBA9717CA9 /* Pods-PJSIP-IOS-lib_Tests.modulemap */,
+				E40790409827831F7887DBEE290CA886 /* Pods-PJSIP-IOS-lib_Tests-acknowledgements.markdown */,
+				5DC27A805B0F46E4918B9AC4C292B6ED /* Pods-PJSIP-IOS-lib_Tests-acknowledgements.plist */,
+				57B03FDE450E43D35852413FA93753A1 /* Pods-PJSIP-IOS-lib_Tests-dummy.m */,
+				2BE18EB3C273090AA320B0147E340F94 /* Pods-PJSIP-IOS-lib_Tests-frameworks.sh */,
+				71ACD6E39EDF8ECBAEC1159C7C5D1CBE /* Pods-PJSIP-IOS-lib_Tests-resources.sh */,
+				5BAE27E3EA3222D529E6804C3D03DF3B /* Pods-PJSIP-IOS-lib_Tests-umbrella.h */,
+				9B5F1BD28DFD8FFE34806CF905E4DC10 /* Pods-PJSIP-IOS-lib_Tests.debug.xcconfig */,
+				45AC2A5EE24B70BFC2B4FC90D12D44C2 /* Pods-PJSIP-IOS-lib_Tests.release.xcconfig */,
+			);
+			name = "Pods-PJSIP-IOS-lib_Tests";
+			path = "Target Support Files/Pods-PJSIP-IOS-lib_Tests";
+			sourceTree = "<group>";
+		};
+		14FCD9B9862D18D7B9E4BB4559A31D35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA60FD697EA4926E4E7DC08D8B03AFC0 /* Info.plist */,
+				D7D7BEFB8C3518DD42A92453DD222B70 /* PJSIP-IOS-lib.modulemap */,
+				37E8E1EA0FA051F23C2C5CE226C56F05 /* PJSIP-IOS-lib.xcconfig */,
+				96340C1EC16A1A189A54C6886BD8E3F4 /* PJSIP-IOS-lib-dummy.m */,
+				2960A19FA18439BCFE07EF7C2CC26BFA /* PJSIP-IOS-lib-prefix.pch */,
+				407F716F7601B30280FD5DC8D0E35B29 /* PJSIP-IOS-lib-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PJSIP-IOS-lib";
+			sourceTree = "<group>";
+		};
+		5085726B06910CCA02EA720F5A5743CA /* PJSIP-IOS-lib */ = {
+			isa = PBXGroup;
+			children = (
+				0D55307658AB0C348A78E19631A1C7C9 /* Classes */,
+			);
+			path = "PJSIP-IOS-lib";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E6120CE006AB03F99A6BA89801E88F36 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FF842A8BDD54B2983A1EAC3149F2B7CE /* Products */,
+				B8775F684D0F1E9060410B45B0B71F17 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9CDEE3471EE83463000818C6 /* pjsip */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3481EE83463000818C6 /* print_util.h */,
+				9CDEE3491EE83463000818C6 /* sip_auth.h */,
+				9CDEE34A1EE83463000818C6 /* sip_auth_aka.h */,
+				9CDEE34B1EE83463000818C6 /* sip_auth_msg.h */,
+				9CDEE34C1EE83463000818C6 /* sip_auth_parser.h */,
+				9CDEE34D1EE83463000818C6 /* sip_autoconf.h */,
+				9CDEE34E1EE83463000818C6 /* sip_autoconf.h.in */,
+				9CDEE34F1EE83463000818C6 /* sip_config.h */,
+				9CDEE3501EE83463000818C6 /* sip_dialog.h */,
+				9CDEE3511EE83463000818C6 /* sip_endpoint.h */,
+				9CDEE3521EE83463000818C6 /* sip_errno.h */,
+				9CDEE3531EE83463000818C6 /* sip_event.h */,
+				9CDEE3541EE83463000818C6 /* sip_module.h */,
+				9CDEE3551EE83463000818C6 /* sip_msg.h */,
+				9CDEE3561EE83463000818C6 /* sip_multipart.h */,
+				9CDEE3571EE83463000818C6 /* sip_parser.h */,
+				9CDEE3581EE83463000818C6 /* sip_private.h */,
+				9CDEE3591EE83463000818C6 /* sip_resolve.h */,
+				9CDEE35A1EE83463000818C6 /* sip_tel_uri.h */,
+				9CDEE35B1EE83463000818C6 /* sip_transaction.h */,
+				9CDEE35C1EE83463000818C6 /* sip_transport.h */,
+				9CDEE35D1EE83463000818C6 /* sip_transport_loop.h */,
+				9CDEE35E1EE83463000818C6 /* sip_transport_tcp.h */,
+				9CDEE35F1EE83463000818C6 /* sip_transport_tls.h */,
+				9CDEE3601EE83463000818C6 /* sip_transport_udp.h */,
+				9CDEE3611EE83463000818C6 /* sip_types.h */,
+				9CDEE3621EE83463000818C6 /* sip_ua_layer.h */,
+				9CDEE3631EE83463000818C6 /* sip_uri.h */,
+				9CDEE3641EE83463000818C6 /* sip_util.h */,
+			);
+			path = pjsip;
+			sourceTree = "<group>";
+		};
+		9CDEE3681EE83463000818C6 /* pjsip-simple */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3691EE83463000818C6 /* errno.h */,
+				9CDEE36A1EE83463000818C6 /* evsub.h */,
+				9CDEE36B1EE83463000818C6 /* evsub_msg.h */,
+				9CDEE36C1EE83463000818C6 /* iscomposing.h */,
+				9CDEE36D1EE83463000818C6 /* mwi.h */,
+				9CDEE36E1EE83463000818C6 /* pidf.h */,
+				9CDEE36F1EE83463000818C6 /* presence.h */,
+				9CDEE3701EE83463000818C6 /* publish.h */,
+				9CDEE3711EE83463000818C6 /* rpid.h */,
+				9CDEE3721EE83463000818C6 /* types.h */,
+				9CDEE3731EE83463000818C6 /* xpidf.h */,
+			);
+			path = "pjsip-simple";
+			sourceTree = "<group>";
+		};
+		9CDEE3741EE83463000818C6 /* pjsip-ua */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3751EE83463000818C6 /* sip_100rel.h */,
+				9CDEE3761EE83463000818C6 /* sip_inv.h */,
+				9CDEE3771EE83463000818C6 /* sip_regc.h */,
+				9CDEE3781EE83463000818C6 /* sip_replaces.h */,
+				9CDEE3791EE83463000818C6 /* sip_timer.h */,
+				9CDEE37A1EE83463000818C6 /* sip_xfer.h */,
+			);
+			path = "pjsip-ua";
+			sourceTree = "<group>";
+		};
+		9CDEE37C1EE83463000818C6 /* pjsua-lib */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE37D1EE83463000818C6 /* pjsua.h */,
+				9CDEE37E1EE83463000818C6 /* pjsua_internal.h */,
+			);
+			path = "pjsua-lib";
+			sourceTree = "<group>";
+		};
+		9CDEE3801EE83463000818C6 /* pjsua2 */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3811EE83463000818C6 /* account.hpp */,
+				9CDEE3821EE83463000818C6 /* call.hpp */,
+				9CDEE3831EE83463000818C6 /* config.hpp */,
+				9CDEE3841EE83463000818C6 /* doxygen.hpp */,
+				9CDEE3851EE83463000818C6 /* endpoint.hpp */,
+				9CDEE3861EE83463000818C6 /* json.hpp */,
+				9CDEE3871EE83463000818C6 /* media.hpp */,
+				9CDEE3881EE83463000818C6 /* persistent.hpp */,
+				9CDEE3891EE83463000818C6 /* presence.hpp */,
+				9CDEE38A1EE83463000818C6 /* siptypes.hpp */,
+				9CDEE38B1EE83463000818C6 /* types.hpp */,
+			);
+			path = pjsua2;
+			sourceTree = "<group>";
+		};
+		9CDEE3CD1EE834A7000818C6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3471EE83463000818C6 /* pjsip */,
+				9CDEE3651EE83463000818C6 /* pjsip_auth.h */,
+				9CDEE3661EE83463000818C6 /* pjsip_simple.h */,
+				9CDEE3671EE83463000818C6 /* pjsip_ua.h */,
+				9CDEE3681EE83463000818C6 /* pjsip-simple */,
+				9CDEE3741EE83463000818C6 /* pjsip-ua */,
+				9CDEE37B1EE83463000818C6 /* pjsip.h */,
+				9CDEE37C1EE83463000818C6 /* pjsua-lib */,
+				9CDEE37F1EE83463000818C6 /* pjsua.h */,
+				9CDEE3801EE83463000818C6 /* pjsua2 */,
+				9CDEE38C1EE83463000818C6 /* pjsua2.hpp */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		9CDEE3CE1EE834B9000818C6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEE3D91EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a */,
+				9CDEE3DA1EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a */,
+				9CDEE3DB1EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a */,
+				9CDEE3DC1EE83BC0000818C6 /* libpjsip-simple-i386-apple-darwin_ios.a */,
+				9CDEE3DD1EE83BC0000818C6 /* libpjsip-ua-armv7-apple-darwin_ios.a */,
+				9CDEE3DE1EE83BC0000818C6 /* libpjsip-ua-i386-apple-darwin_ios.a */,
+				9CDEE3DF1EE83BC0000818C6 /* libpjsua-armv7-apple-darwin_ios.a */,
+				9CDEE3E01EE83BC0000818C6 /* libpjsua-i386-apple-darwin_ios.a */,
+				9CDEE3E11EE83BC0000818C6 /* libpjsua2-armv7-apple-darwin_ios.a */,
+				9CDEE3E21EE83BC0000818C6 /* libpjsua2-i386-apple-darwin_ios.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		B8775F684D0F1E9060410B45B0B71F17 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E0818E443E87500F023CF6D3C26DF82 /* Pods-PJSIP-IOS-lib_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1DD0A91082CEBA53B06B7BDED230AEA /* PJSIP-IOS-lib */ = {
+			isa = PBXGroup;
+			children = (
+				5085726B06910CCA02EA720F5A5743CA /* PJSIP-IOS-lib */,
+				14FCD9B9862D18D7B9E4BB4559A31D35 /* Support Files */,
+			);
+			name = "PJSIP-IOS-lib";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E6120CE006AB03F99A6BA89801E88F36 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD0A91082CEBA53B06B7BDED230AEA /* PJSIP-IOS-lib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FF842A8BDD54B2983A1EAC3149F2B7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC255CB960A2DA926F205B5A03D1C632 /* PJSIP_IOS_lib.framework */,
+				D366012A21909C90AFF1FD9A8C726BED /* Pods_PJSIP_IOS_lib_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15CE60DC8DEB51422E2B8951BF12A7F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDEE3B61EE83463000818C6 /* xpidf.h in Headers */,
+				9CDEE3B81EE83463000818C6 /* sip_inv.h in Headers */,
+				9CDEE3A61EE83463000818C6 /* sip_ua_layer.h in Headers */,
+				9CDEE3C71EE83463000818C6 /* media.hpp in Headers */,
+				9CDEE39A1EE83463000818C6 /* sip_multipart.h in Headers */,
+				9CDEE3B41EE83463000818C6 /* rpid.h in Headers */,
+				9CDEE3AF1EE83463000818C6 /* iscomposing.h in Headers */,
+				9CDEE3C61EE83463000818C6 /* json.hpp in Headers */,
+				9CDEE3C31EE83463000818C6 /* config.hpp in Headers */,
+				9CDEE3BE1EE83463000818C6 /* pjsua.h in Headers */,
+				9CDEE3B91EE83463000818C6 /* sip_regc.h in Headers */,
+				9CDEE3C41EE83463000818C6 /* doxygen.hpp in Headers */,
+				9CDEE3921EE83463000818C6 /* sip_autoconf.h in Headers */,
+				9CDEE38D1EE83463000818C6 /* print_util.h in Headers */,
+				9CDEE3971EE83463000818C6 /* sip_event.h in Headers */,
+				9CDEE3AE1EE83463000818C6 /* evsub_msg.h in Headers */,
+				9CDEE3991EE83463000818C6 /* sip_msg.h in Headers */,
+				9CDEE3A01EE83463000818C6 /* sip_transport.h in Headers */,
+				9CDEE3C01EE83463000818C6 /* pjsua.h in Headers */,
+				9CDEE3BB1EE83463000818C6 /* sip_timer.h in Headers */,
+				9CDEE3C11EE83463000818C6 /* account.hpp in Headers */,
+				9CDEE38F1EE83463000818C6 /* sip_auth_aka.h in Headers */,
+				9CDEE3AD1EE83463000818C6 /* evsub.h in Headers */,
+				9CDEE3B21EE83463000818C6 /* presence.h in Headers */,
+				9CDEE3931EE83463000818C6 /* sip_config.h in Headers */,
+				9CDEE3981EE83463000818C6 /* sip_module.h in Headers */,
+				9CDEE3A51EE83463000818C6 /* sip_types.h in Headers */,
+				9CDEE39F1EE83463000818C6 /* sip_transaction.h in Headers */,
+				9CDEE3B01EE83463000818C6 /* mwi.h in Headers */,
+				9CDEE3C51EE83463000818C6 /* endpoint.hpp in Headers */,
+				9CDEE3901EE83463000818C6 /* sip_auth_msg.h in Headers */,
+				9CDEE3961EE83463000818C6 /* sip_errno.h in Headers */,
+				9CDEE3CC1EE83463000818C6 /* pjsua2.hpp in Headers */,
+				9CDEE3BF1EE83463000818C6 /* pjsua_internal.h in Headers */,
+				9CDEE3C21EE83463000818C6 /* call.hpp in Headers */,
+				9CDEE39C1EE83463000818C6 /* sip_private.h in Headers */,
+				9CDEE3A81EE83463000818C6 /* sip_util.h in Headers */,
+				9CDEE3AA1EE83463000818C6 /* pjsip_simple.h in Headers */,
+				9CDEE3BC1EE83463000818C6 /* sip_xfer.h in Headers */,
+				9CDEE3B31EE83463000818C6 /* publish.h in Headers */,
+				9CDEE3A41EE83463000818C6 /* sip_transport_udp.h in Headers */,
+				9CDEE3A11EE83463000818C6 /* sip_transport_loop.h in Headers */,
+				9CDEE3B11EE83463000818C6 /* pidf.h in Headers */,
+				9CDEE39B1EE83463000818C6 /* sip_parser.h in Headers */,
+				9CDEE3A71EE83463000818C6 /* sip_uri.h in Headers */,
+				9CDEE39D1EE83463000818C6 /* sip_resolve.h in Headers */,
+				9CDEE3B51EE83463000818C6 /* types.h in Headers */,
+				9CDEE39E1EE83463000818C6 /* sip_tel_uri.h in Headers */,
+				9CDEE3B71EE83463000818C6 /* sip_100rel.h in Headers */,
+				9CDEE38E1EE83463000818C6 /* sip_auth.h in Headers */,
+				9CDEE3911EE83463000818C6 /* sip_auth_parser.h in Headers */,
+				9CDEE3C81EE83463000818C6 /* persistent.hpp in Headers */,
+				9CDEE3A31EE83463000818C6 /* sip_transport_tls.h in Headers */,
+				9CDEE3CB1EE83463000818C6 /* types.hpp in Headers */,
+				9CDEE3BD1EE83463000818C6 /* pjsip.h in Headers */,
+				9CDEE3BA1EE83463000818C6 /* sip_replaces.h in Headers */,
+				9CDEE3941EE83463000818C6 /* sip_dialog.h in Headers */,
+				9CDEE3C91EE83463000818C6 /* presence.hpp in Headers */,
+				9CDEE3AB1EE83463000818C6 /* pjsip_ua.h in Headers */,
+				9CDEE3A21EE83463000818C6 /* sip_transport_tcp.h in Headers */,
+				9CDEE3951EE83463000818C6 /* sip_endpoint.h in Headers */,
+				9CDEE3AC1EE83463000818C6 /* errno.h in Headers */,
+				9CDEE3CA1EE83463000818C6 /* siptypes.hpp in Headers */,
+				B320844378F82E0BA0152CA2E921610D /* PJSIP-IOS-lib-umbrella.h in Headers */,
+				9CDEE3A91EE83463000818C6 /* pjsip_auth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4257A397D54A79D9731EC9F72EC924C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2C2C8065F7DD631AE168DA3030E1AE /* Pods-PJSIP-IOS-lib_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		413423C54C95805B4015F6962900ADE0 /* Pods-PJSIP-IOS-lib_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F05CF078FEF5186145989DBE81856B /* Build configuration list for PBXNativeTarget "Pods-PJSIP-IOS-lib_Tests" */;
+			buildPhases = (
+				E71754550F6E804F8BDFA24938AE4A39 /* Sources */,
+				AD9ABB7FED2FA868201A7DD810A528DD /* Frameworks */,
+				4257A397D54A79D9731EC9F72EC924C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				262EAE7D98A5920847DA5CF64B0A4C91 /* PBXTargetDependency */,
+			);
+			name = "Pods-PJSIP-IOS-lib_Tests";
+			productName = "Pods-PJSIP-IOS-lib_Tests";
+			productReference = D366012A21909C90AFF1FD9A8C726BED /* Pods_PJSIP_IOS_lib_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C1D69677A73C65709A3D909C3A3EF42 /* PJSIP-IOS-lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E9D5FA367B2559218D8FB80B25498C /* Build configuration list for PBXNativeTarget "PJSIP-IOS-lib" */;
+			buildPhases = (
+				732507F93AE7324F9F4840462F644EB8 /* Sources */,
+				1F6D68AFDA8FD2568F97DD7A4917F20F /* Frameworks */,
+				15CE60DC8DEB51422E2B8951BF12A7F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PJSIP-IOS-lib";
+			productName = "PJSIP-IOS-lib";
+			productReference = CC255CB960A2DA926F205B5A03D1C632 /* PJSIP_IOS_lib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FF842A8BDD54B2983A1EAC3149F2B7CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C1D69677A73C65709A3D909C3A3EF42 /* PJSIP-IOS-lib */,
+				413423C54C95805B4015F6962900ADE0 /* Pods-PJSIP-IOS-lib_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		732507F93AE7324F9F4840462F644EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874A75BB8475B17EAFAB264D51403142 /* PJSIP-IOS-lib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71754550F6E804F8BDFA24938AE4A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717782D7DE4241507213B120DD431A33 /* Pods-PJSIP-IOS-lib_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		262EAE7D98A5920847DA5CF64B0A4C91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PJSIP-IOS-lib";
+			target = 6C1D69677A73C65709A3D909C3A3EF42 /* PJSIP-IOS-lib */;
+			targetProxy = A223A8C0415469CCCF65EC55CE6D60CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		483A74187BECF8CB2CDD6FE00775690D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E8E1EA0FA051F23C2C5CE226C56F05 /* PJSIP-IOS-lib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PJSIP-IOS-lib/PJSIP-IOS-lib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PJSIP-IOS-lib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PJSIP-IOS-lib/PJSIP-IOS-lib.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PJSIP_IOS_lib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4DE5F218D87EA869B831BBB3D427A54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E8E1EA0FA051F23C2C5CE226C56F05 /* PJSIP-IOS-lib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PJSIP-IOS-lib/PJSIP-IOS-lib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PJSIP-IOS-lib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PJSIP-IOS-lib/PJSIP-IOS-lib.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PJSIP_IOS_lib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5B197E4C95D06153FC7CF2AAB9FC297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AC2A5EE24B70BFC2B4FC90D12D44C2 /* Pods-PJSIP-IOS-lib_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PJSIP-IOS-lib_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PJSIP-IOS-lib_Tests/Pods-PJSIP-IOS-lib_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PJSIP_IOS_lib_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7C5579B162EB4BF5424000CF1082E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5F1BD28DFD8FFE34806CF905E4DC10 /* Pods-PJSIP-IOS-lib_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PJSIP-IOS-lib_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PJSIP-IOS-lib_Tests/Pods-PJSIP-IOS-lib_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PJSIP_IOS_lib_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E9D5FA367B2559218D8FB80B25498C /* Build configuration list for PBXNativeTarget "PJSIP-IOS-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE5F218D87EA869B831BBB3D427A54C /* Debug */,
+				483A74187BECF8CB2CDD6FE00775690D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F05CF078FEF5186145989DBE81856B /* Build configuration list for PBXNativeTarget "Pods-PJSIP-IOS-lib_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C5579B162EB4BF5424000CF1082E5D /* Debug */,
+				B5B197E4C95D06153FC7CF2AAB9FC297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
