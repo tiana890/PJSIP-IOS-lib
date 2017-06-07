@@ -42,6 +42,6 @@ s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h, hpp}'
 
     s.xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => 'PJ_AUTOCONF=1',
-    'HEADER_SEARCH_PATHS'  => '$(inherited) $(PODS_ROOT)/PJSIP-IOS-lib/'
+    'HEADER_SEARCH_PATHS'  => '$(inherited) $(PODS_ROOT)/PJSIP-IOS-lib/PJSIP-IOS-lib/Classes'
     }
 end
