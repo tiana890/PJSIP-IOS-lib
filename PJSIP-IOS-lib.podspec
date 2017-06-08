@@ -30,18 +30,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h, hpp}'
+  s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h, hpp}'
   s.libraries 			= 'stdc++'
+  s.vendored_libraries = 'Pod/Classes/*.a'
   # s.resource_bundles = {
   #   'PJSIP-IOS-lib' => ['PJSIP-IOS-lib/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/include/*.h'
-   s.frameworks = "AudioToolbox", "AVFoundation", "CFNetwork",  "CoreMedia"
+  s.frameworks = "AudioToolbox", "AVFoundation", "CFNetwork",  "CoreMedia"
   # s.dependency 'AFNetworking', '~> 2.3'
 
-    s.xcconfig = {
+  s.xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => 'PJ_AUTOCONF=1',
     'HEADER_SEARCH_PATHS'  => '$(inherited) $(PODS_ROOT)/PJSIP-IOS-lib/PJSIP-IOS-lib/Classes'
-    }
+  }
 end
