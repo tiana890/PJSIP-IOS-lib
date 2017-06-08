@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h, hpp}'
   s.libraries 			= 'stdc++'
-  s.vendored_libraries = 'Pod/Classes/*.a'
+  s.vendored_libraries = 'PJSIP-IOS-lib/Classes/*.a'
   # s.resource_bundles = {
   #   'PJSIP-IOS-lib' => ['PJSIP-IOS-lib/Assets/*.png']
   # }
