@@ -316,6 +316,11 @@
 		9C3DFF411EE928F50089D516 /* libpjsip-ua-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3DFF3C1EE928F50089D516 /* libpjsip-ua-arm64-apple-darwin_ios.a */; };
 		9C3DFF421EE928F50089D516 /* libpjsua-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3DFF3D1EE928F50089D516 /* libpjsua-arm64-apple-darwin_ios.a */; };
 		9C3DFF431EE928F50089D516 /* libpjsua2-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3DFF3E1EE928F50089D516 /* libpjsua2-arm64-apple-darwin_ios.a */; };
+		9C7BAE561EEFB9AC0012AFA8 /* libpjsip-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7BAE511EEFB9AC0012AFA8 /* libpjsip-i386-apple-darwin_ios.a */; };
+		9C7BAE571EEFB9AC0012AFA8 /* libpjsip-simple-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7BAE521EEFB9AC0012AFA8 /* libpjsip-simple-i386-apple-darwin_ios.a */; };
+		9C7BAE581EEFB9AC0012AFA8 /* libpjsip-ua-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7BAE531EEFB9AC0012AFA8 /* libpjsip-ua-i386-apple-darwin_ios.a */; };
+		9C7BAE591EEFB9AC0012AFA8 /* libpjsua-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7BAE541EEFB9AC0012AFA8 /* libpjsua-i386-apple-darwin_ios.a */; };
+		9C7BAE5A1EEFB9AC0012AFA8 /* libpjsua2-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7BAE551EEFB9AC0012AFA8 /* libpjsua2-i386-apple-darwin_ios.a */; };
 		9CDEE3E31EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3D91EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a */; };
 		9CDEE3E41EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DA1EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a */; };
 		9CDEE3E51EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEE3DB1EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a */; };
@@ -664,6 +669,11 @@
 		9C3DFF3C1EE928F50089D516 /* libpjsip-ua-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9C3DFF3D1EE928F50089D516 /* libpjsua-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9C3DFF3E1EE928F50089D516 /* libpjsua2-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9C7BAE511EEFB9AC0012AFA8 /* libpjsip-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9C7BAE521EEFB9AC0012AFA8 /* libpjsip-simple-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9C7BAE531EEFB9AC0012AFA8 /* libpjsip-ua-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9C7BAE541EEFB9AC0012AFA8 /* libpjsua-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		9C7BAE551EEFB9AC0012AFA8 /* libpjsua2-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CDEE3D91EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CDEE3DA1EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-i386-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CDEE3DB1EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
@@ -686,17 +696,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7BAE5A1EEFB9AC0012AFA8 /* libpjsua2-i386-apple-darwin_ios.a in Frameworks */,
+				9C7BAE571EEFB9AC0012AFA8 /* libpjsip-simple-i386-apple-darwin_ios.a in Frameworks */,
 				9CDEE3E71EE83BC0000818C6 /* libpjsip-ua-armv7-apple-darwin_ios.a in Frameworks */,
 				9C3DFF421EE928F50089D516 /* libpjsua-arm64-apple-darwin_ios.a in Frameworks */,
 				9C3DFF411EE928F50089D516 /* libpjsip-ua-arm64-apple-darwin_ios.a in Frameworks */,
+				9C7BAE561EEFB9AC0012AFA8 /* libpjsip-i386-apple-darwin_ios.a in Frameworks */,
 				9CDEE3E81EE83BC0000818C6 /* libpjsip-ua-i386-apple-darwin_ios.a in Frameworks */,
 				9CDEE3EA1EE83BC0000818C6 /* libpjsua-i386-apple-darwin_ios.a in Frameworks */,
 				9CDEE3E51EE83BC0000818C6 /* libpjsip-simple-armv7-apple-darwin_ios.a in Frameworks */,
 				9CDEE3EB1EE83BC0000818C6 /* libpjsua2-armv7-apple-darwin_ios.a in Frameworks */,
 				9C3DFF3F1EE928F50089D516 /* libpjsip-arm64-apple-darwin_ios.a in Frameworks */,
+				9C7BAE591EEFB9AC0012AFA8 /* libpjsua-i386-apple-darwin_ios.a in Frameworks */,
 				9CDEE3EC1EE83BC0000818C6 /* libpjsua2-i386-apple-darwin_ios.a in Frameworks */,
 				9C3DFF401EE928F50089D516 /* libpjsip-simple-arm64-apple-darwin_ios.a in Frameworks */,
 				9CDEE3E31EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a in Frameworks */,
+				9C7BAE581EEFB9AC0012AFA8 /* libpjsip-ua-i386-apple-darwin_ios.a in Frameworks */,
 				9C3DFF431EE928F50089D516 /* libpjsua2-arm64-apple-darwin_ios.a in Frameworks */,
 				63191FF19EF8A5158A2169C8B7A6071D /* Foundation.framework in Frameworks */,
 				9CDEE3E91EE83BC0000818C6 /* libpjsua-armv7-apple-darwin_ios.a in Frameworks */,
@@ -1202,6 +1217,11 @@
 		9CDEE3CE1EE834B9000818C6 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				9C7BAE511EEFB9AC0012AFA8 /* libpjsip-i386-apple-darwin_ios.a */,
+				9C7BAE521EEFB9AC0012AFA8 /* libpjsip-simple-i386-apple-darwin_ios.a */,
+				9C7BAE531EEFB9AC0012AFA8 /* libpjsip-ua-i386-apple-darwin_ios.a */,
+				9C7BAE541EEFB9AC0012AFA8 /* libpjsua-i386-apple-darwin_ios.a */,
+				9C7BAE551EEFB9AC0012AFA8 /* libpjsua2-i386-apple-darwin_ios.a */,
 				9CDEE3D91EE83BC0000818C6 /* libpjsip-armv7-apple-darwin_ios.a */,
 				9CDEE3DA1EE83BC0000818C6 /* libpjsip-i386-apple-darwin_ios.a */,
 				9C3DFF3A1EE928F50089D516 /* libpjsip-arm64-apple-darwin_ios.a */,
