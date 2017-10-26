@@ -389,7 +389,6 @@
 		9CA7A6BB1FA0BB8400890E2E /* libpjsip-simple-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6B11FA0BB8400890E2E /* libpjsip-simple-arm64-apple-darwin_ios.a */; };
 		9CA7A6BC1FA0BB8400890E2E /* libpjsip-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6B21FA0BB8400890E2E /* libpjsip-armv7-apple-darwin_ios.a */; };
 		9CA7A6BD1FA0BB8400890E2E /* libpjsua2-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6B31FA0BB8400890E2E /* libpjsua2-arm64-apple-darwin_ios.a */; };
-		9CA7A6C01FA0BBB200890E2E /* libpjnath-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6BE1FA0BBB100890E2E /* libpjnath-arm64-apple-darwin_ios.a */; };
 		9CA7A6C11FA0BBB200890E2E /* libpjnath-armv7-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6BF1FA0BBB200890E2E /* libpjnath-armv7-apple-darwin_ios.a */; };
 		9CA7A6D21FA0BBDC00890E2E /* libgsmcodec-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6C21FA0BBD700890E2E /* libgsmcodec-arm64-apple-darwin_ios.a */; };
 		9CA7A6D31FA0BBDC00890E2E /* libwebrtc-arm64-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7A6C31FA0BBD700890E2E /* libwebrtc-arm64-apple-darwin_ios.a */; };
@@ -829,7 +828,6 @@
 		9CA7A6B11FA0BB8400890E2E /* libpjsip-simple-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CA7A6B21FA0BB8400890E2E /* libpjsip-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CA7A6B31FA0BB8400890E2E /* libpjsua2-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
-		9CA7A6BE1FA0BBB100890E2E /* libpjnath-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjnath-arm64-apple-darwin_ios.a"; path = "../../../../../../Downloads/pjproject-2.7/pjnath/lib/libpjnath-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CA7A6BF1FA0BBB200890E2E /* libpjnath-armv7-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjnath-armv7-apple-darwin_ios.a"; path = "../../../../../../Downloads/pjproject-2.7/pjnath/lib/libpjnath-armv7-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CA7A6C21FA0BBD700890E2E /* libgsmcodec-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgsmcodec-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
 		9CA7A6C31FA0BBD700890E2E /* libwebrtc-arm64-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libwebrtc-arm64-apple-darwin_ios.a"; sourceTree = "<group>"; };
@@ -883,7 +881,6 @@
 				9C3DFF421EE928F50089D516 /* libpjsua-arm64-apple-darwin_ios.a in Frameworks */,
 				9C3DFF411EE928F50089D516 /* libpjsip-ua-arm64-apple-darwin_ios.a in Frameworks */,
 				9CA7A6BC1FA0BB8400890E2E /* libpjsip-armv7-apple-darwin_ios.a in Frameworks */,
-				9CA7A6C01FA0BBB200890E2E /* libpjnath-arm64-apple-darwin_ios.a in Frameworks */,
 				9C7BAE561EEFB9AC0012AFA8 /* libpjsip-i386-apple-darwin_ios.a in Frameworks */,
 				9CA7A6A81FA0BB7800890E2E /* libpjnath-arm64-apple-darwin_ios.a in Frameworks */,
 				9C25B49F1EEFFA6500A370BA /* libpjmedia-armv7-apple-darwin_ios.a in Frameworks */,
@@ -1495,7 +1492,6 @@
 				9C25B4731EEFFA6500A370BA /* libpjlib-util-arm64-apple-darwin_ios.a */,
 				9C25B4741EEFFA6500A370BA /* libpjlib-util-armv7-apple-darwin_ios.a */,
 				9C25B4751EEFFA6500A370BA /* libpjlib-util-x86_64-apple-darwin_ios.a */,
-				9CA7A6BE1FA0BBB100890E2E /* libpjnath-arm64-apple-darwin_ios.a */,
 				9CA7A6BF1FA0BBB200890E2E /* libpjnath-armv7-apple-darwin_ios.a */,
 				9C25B4761EEFFA6500A370BA /* libpjmedia-arm64-apple-darwin_ios.a */,
 				9CA7A69A1FA0BB6E00890E2E /* libpjmedia-arm64-apple-darwin_ios.a */,
