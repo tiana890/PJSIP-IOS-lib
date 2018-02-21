@@ -1,4 +1,4 @@
-/* $Id: sip_config.h 5557 2017-02-20 01:23:54Z ming $ */
+/* $Id: sip_config.h 5668 2017-09-29 02:43:05Z ming $ */
 /* 
  * Copyright (C) 2008-2011 Teluu Inc. (http://www.teluu.com)
  * Copyright (C) 2003-2008 Benny Prijono <benny@prijono.org>
@@ -376,6 +376,16 @@ PJ_INLINE(pjsip_cfg_t*) pjsip_cfg(void)
 #   define PJSIP_DONT_SWITCH_TO_TLS	0
 #endif
 
+/**
+ * Specify if #pjsip_endpt_handle_events() should sleep if ioqueue poll
+ * returns error.
+ *
+ * Default is 1 (yes).
+ */
+
+#ifndef PJSIP_HANDLE_EVENTS_HAS_SLEEP_ON_ERR
+#   define PJSIP_HANDLE_EVENTS_HAS_SLEEP_ON_ERR	    1
+#endif
 
 /**
  * Specify whether the call media session should be updated to the latest
@@ -1018,7 +1028,7 @@ PJ_INLINE(pjsip_cfg_t*) pjsip_cfg(void)
  * Default: 0
  */
 #if !defined(PJSIP_AUTH_HEADER_CACHING)
-#   define PJSIP_AUTH_HEADER_CACHING	    0
+#   define PJSIP_AUTH_HEADER_CACHING	    1
 #endif
 
 /**
@@ -1039,7 +1049,7 @@ PJ_INLINE(pjsip_cfg_t*) pjsip_cfg(void)
  * Default: 0
  */
 #if !defined(PJSIP_AUTH_AUTO_SEND_NEXT)
-#   define PJSIP_AUTH_AUTO_SEND_NEXT	    0
+#   define PJSIP_AUTH_AUTO_SEND_NEXT	    1
 #endif
 
 /**
