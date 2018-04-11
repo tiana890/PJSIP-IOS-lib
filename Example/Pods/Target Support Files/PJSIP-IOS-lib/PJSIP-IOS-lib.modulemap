@@ -1,6 +1,0 @@
-framework module PJSIP_IOS_lib {
-  umbrella header "PJSIP-IOS-lib-umbrella.h"
-
-  export *
-  module * { export * }
-}
