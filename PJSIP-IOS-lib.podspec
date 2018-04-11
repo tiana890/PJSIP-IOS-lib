@@ -30,9 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'PJSIP-IOS-lib/Classes/**/*.{h, hpp}'
-  s.libraries 			= 'stdc++'
-  s.vendored_libraries = 'PJSIP-IOS-lib/Classes/*.a'
+  s.platform              = :ios, "9.0"
+  s.requires_arc          = false
+
+  s.preserve_paths        = "ZadarmaPJSIP.framework/*"
+  s.public_header_files   = "ZadarmaPJSIP.framework/Versions/A/Headers/**/*.{h,hpp}"
+  s.source_files          = "ZadarmaPJSIP.framework/Versions/A/Headers/**/*.{h,hpp}"
+  s.vendored_frameworks   = "ZadarmaPJSIP.framework"
   # s.resource_bundles = {
   #   'PJSIP-IOS-lib' => ['PJSIP-IOS-lib/Assets/*.png']
   # }
@@ -43,6 +47,5 @@ TODO: Add long description of the pod here.
 
   s.xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => 'PJ_AUTOCONF=1',
-    'HEADER_SEARCH_PATHS'  => '$(inherited) $(PODS_ROOT)/PJSIP-IOS-lib/PJSIP-IOS-lib/Classes'
   }
 end
