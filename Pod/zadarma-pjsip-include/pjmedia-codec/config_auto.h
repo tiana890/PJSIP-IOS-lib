@@ -92,7 +92,7 @@
 
 /* G.729 codec with BCG729 backend */
 #ifndef PJMEDIA_HAS_BCG729
-#define PJMEDIA_HAS_BCG729 0
+#define PJMEDIA_HAS_BCG729 1
 #endif
 
 #endif	/* __PJMEDIA_CODEC_CONFIG_AUTO_H_ */
