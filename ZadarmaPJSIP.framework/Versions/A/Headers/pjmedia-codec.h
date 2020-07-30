@@ -1,4 +1,4 @@
-/* $Id: pjmedia-codec.h 5630 2017-07-19 10:29:10Z riza $ */
+/* $Id$ */
 /* 
  * Copyright (C) 2008-2011 Teluu Inc. (http://www.teluu.com)
  * Copyright (C) 2003-2008 Benny Prijono <benny@prijono.org>
@@ -26,22 +26,22 @@
  */
 
 #include <ZadarmaPJSIP/pjmedia-codec/audio_codecs.h>
-#include <ZadarmaPJSIP/pjmedia-codec/l16.h>
+#include <ZadarmaPJSIP/pjmedia-codec/bcg729.h>
 #include <ZadarmaPJSIP/pjmedia-codec/ffmpeg_vid_codecs.h>
-#include <ZadarmaPJSIP/pjmedia-codec/gsm.h>
-#include <ZadarmaPJSIP/pjmedia-codec/speex.h>
-#include <ZadarmaPJSIP/pjmedia-codec/ilbc.h>
 #include <ZadarmaPJSIP/pjmedia-codec/g722.h>
 #include <ZadarmaPJSIP/pjmedia-codec/g7221.h>
+#include <ZadarmaPJSIP/pjmedia-codec/gsm.h>
+#include <ZadarmaPJSIP/pjmedia-codec/ilbc.h>
 #include <ZadarmaPJSIP/pjmedia-codec/ipp_codecs.h>
+#include <ZadarmaPJSIP/pjmedia-codec/l16.h>
 #include <ZadarmaPJSIP/pjmedia-codec/opencore_amr.h>
-#include <ZadarmaPJSIP/pjmedia-codec/vid_toolbox.h>
 #include <ZadarmaPJSIP/pjmedia-codec/openh264.h>
+#include <ZadarmaPJSIP/pjmedia-codec/opus.h>
 #include <ZadarmaPJSIP/pjmedia-codec/passthrough.h>
 #include <ZadarmaPJSIP/pjmedia-codec/silk.h>
-#include <ZadarmaPJSIP/pjmedia-codec/opus.h>
-#include <ZadarmaPJSIP/pjmedia-codec/bcg729.h>
-
+#include <ZadarmaPJSIP/pjmedia-codec/speex.h>
+#include <ZadarmaPJSIP/pjmedia-codec/vid_toolbox.h>
+#include <ZadarmaPJSIP/pjmedia-codec/vpx.h>
 
 #endif	/* __PJMEDIA_CODEC_PJMEDIA_CODEC_H__ */
 
