@@ -87,12 +87,12 @@
 
 /* OPUS codec */
 #ifndef PJMEDIA_HAS_OPUS_CODEC
-#define PJMEDIA_HAS_OPUS_CODEC 1
+#define PJMEDIA_HAS_OPUS_CODEC 0
 #endif
 
 /* G.729 codec with BCG729 backend */
 #ifndef PJMEDIA_HAS_BCG729
-#define PJMEDIA_HAS_BCG729 0
+#define PJMEDIA_HAS_BCG729 1
 #endif
 
 #endif	/* __PJMEDIA_CODEC_CONFIG_AUTO_H_ */
