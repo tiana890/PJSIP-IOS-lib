@@ -352,10 +352,10 @@
 
 /**
  * Maximum number of argument values of choice type.
- * Default: 64
+ * Default: 16
  */
 #ifndef PJ_CLI_MAX_CHOICE_VAL
-#   define PJ_CLI_MAX_CHOICE_VAL   64
+#   define PJ_CLI_MAX_CHOICE_VAL  16
 #endif
 
 /**
