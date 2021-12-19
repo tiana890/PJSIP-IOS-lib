@@ -3,4 +3,5 @@
  #define PJ_AUTOCONF 1
  #define PJMEDIA_HAS_VIDEO 0
  #define PJ_ENABLE_EXTRA_CHECK 0
+ #define PJ_GETHOSTIP_DISABLE_LOCAL_RESOLUTION 1
 #include <pj/config_site_sample.h>

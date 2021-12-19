@@ -28,9 +28,10 @@
  */
 
 /* Canonical OS name */
-#define PJ_OS_NAME "arm64-apple-darwin_ios"
+#define PJ_OS_NAME "armv7s-apple-darwin_ios"
 
 /* Legacy macros */
+/* #undef PJ_WIN64 */
 /* #undef PJ_WIN32 */
 /* #undef PJ_WIN32_WINNT */
 /* #undef WIN32_LEAN_AND_MEAN */
@@ -175,7 +176,7 @@
 #define PJ_NATIVE_STRING_IS_UNICODE 0
 
 /* Pool alignment in bytes */
-#define PJ_POOL_ALIGNMENT 8
+#define PJ_POOL_ALIGNMENT 4
 
 /* The type of atomic variable value: */
 #define PJ_ATOMIC_VALUE_TYPE long
@@ -192,7 +193,9 @@
 #    if TARGET_OS_IPHONE
 #	include "Availability.h"
 	/* Use CFHost API for pj_getaddrinfo() (see ticket #1246) */
-#	define PJ_GETADDRINFO_USE_CFHOST 1
+#	ifndef PJ_GETADDRINFO_USE_CFHOST
+#	    define PJ_GETADDRINFO_USE_CFHOST 0
+#	endif
 #    	ifdef __IPHONE_4_0
  	    /* Is multitasking support available?  (see ticket #1107) */
 #	    define PJ_IPHONE_OS_HAS_MULTITASKING_SUPPORT 	1
