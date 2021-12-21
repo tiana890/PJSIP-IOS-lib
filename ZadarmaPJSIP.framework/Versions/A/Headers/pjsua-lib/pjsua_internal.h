@@ -218,9 +218,7 @@ struct pjsua_srv_pres
     char	    *remote;	    /**< Remote URI.			    */
     int		     acc_id;	    /**< Account ID.			    */
     pjsip_dialog    *dlg;	    /**< Dialog.			    */
-    unsigned	     expires;	    /**< "expires" value in the request,
-    					 PJSIP_EXPIRES_NOT_SPECIFIED
-    					 if not present.    		    */
+    int		     expires;	    /**< "expires" value in the request.    */
 };
 
 /**
@@ -896,11 +894,6 @@ pj_status_t pjsua_acc_update_contact_on_ip_change(pjsua_acc *acc);
  * Call handling per account on IP change process.
  */
 pj_status_t pjsua_acc_handle_call_on_ip_change(pjsua_acc *acc);
-
-/*
- * End IP change process per account.
- */
-void pjsua_acc_end_ip_change(pjsua_acc *acc);
 
 PJ_END_DECL
 
