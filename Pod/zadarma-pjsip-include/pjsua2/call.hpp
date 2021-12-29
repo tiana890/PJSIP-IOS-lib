@@ -515,15 +515,6 @@ struct CallInfo
 
 public:
     /**
-     * Default constructor
-     */
-    CallInfo() : id(PJSUA_INVALID_ID),
-		 role(PJSIP_ROLE_UAC),
-		 state(PJSIP_INV_STATE_NULL),
-		 lastStatusCode(PJSIP_SC_NULL)
-    {}
-
-    /**
      * Convert from pjsip
      */
     void fromPj(const pjsua_call_info &pci);
@@ -590,14 +581,6 @@ struct StreamInfo
     VidCodecParam       vidCodecParam;
 
 public:
-    /**
-     * Default constructor
-     */
-    StreamInfo() : type(PJMEDIA_TYPE_NONE),
-		   proto(PJMEDIA_TP_PROTO_NONE),
-		   dir(PJMEDIA_DIR_NONE)
-    {}
-
     /**
      * Convert from pjsip
      */
@@ -678,12 +661,12 @@ struct OnCallSdpCreatedParam
 struct OnStreamCreatedParam
 {
     /**
-     * Audio media stream, read-only.
+     * Media stream, read-only.
      */
     MediaStream stream;
     
     /**
-     * Stream index in the audio media session, read-only.
+     * Stream index in the media session, read-only.
      */
     unsigned    streamIdx;
     
@@ -698,7 +681,7 @@ struct OnStreamCreatedParam
     bool 	destroyPort;
 
     /**
-     * On input, it specifies the audio media port of the stream. Application
+     * On input, it specifies the media port of the stream. Application
      * may modify this pointer to point to different media port to be
      * registered to the conference bridge.
      */
@@ -712,12 +695,12 @@ struct OnStreamCreatedParam
 struct OnStreamDestroyedParam
 {
     /**
-     * Audio media stream.
+     * Media stream.
      */
     MediaStream stream;
     
     /**
-     * Stream index in the audio media session.
+     * Stream index in the media session.
      */
     unsigned    streamIdx;
 };
@@ -893,7 +876,7 @@ struct OnCallRxReinviteParam
      * On input, it is false. Set to true if app wants to manually answer
      * the re-INVITE.
      */
-    bool		isAsync;
+    bool		async;
     
     /**
      * Status code to be returned for answering the offer. On input,
@@ -1711,10 +1694,10 @@ public:
     { PJ_UNUSED_ARG(prm); }
     
     /**
-     * Notify application when audio media session is created and before it is
+     * Notify application when media session is created and before it is
      * registered to the conference bridge. Application may return different
-     * audio media port if it has added media processing port to the stream.
-     * This media port then will be added to the conference bridge instead.
+     * media port if it has added media processing port to the stream. This
+     * media port then will be added to the conference bridge instead.
      *
      * @param prm	Callback parameter.
      */
@@ -1722,8 +1705,8 @@ public:
     { PJ_UNUSED_ARG(prm); }
     
     /**
-     * Notify application when audio media session has been unregistered from
-     * the conference bridge and about to be destroyed.
+     * Notify application when media session has been unregistered from the
+     * conference bridge and about to be destroyed.
      *
      * @param prm	Callback parameter.
      */

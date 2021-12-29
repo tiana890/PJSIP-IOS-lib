@@ -26,22 +26,22 @@
  */
 
 #include <ZadarmaPJSIP/pjmedia-codec/audio_codecs.h>
-#include <ZadarmaPJSIP/pjmedia-codec/bcg729.h>
+#include <ZadarmaPJSIP/pjmedia-codec/l16.h>
 #include <ZadarmaPJSIP/pjmedia-codec/ffmpeg_vid_codecs.h>
+#include <ZadarmaPJSIP/pjmedia-codec/gsm.h>
+#include <ZadarmaPJSIP/pjmedia-codec/speex.h>
+#include <ZadarmaPJSIP/pjmedia-codec/ilbc.h>
 #include <ZadarmaPJSIP/pjmedia-codec/g722.h>
 #include <ZadarmaPJSIP/pjmedia-codec/g7221.h>
-#include <ZadarmaPJSIP/pjmedia-codec/gsm.h>
-#include <ZadarmaPJSIP/pjmedia-codec/ilbc.h>
 #include <ZadarmaPJSIP/pjmedia-codec/ipp_codecs.h>
-#include <ZadarmaPJSIP/pjmedia-codec/l16.h>
 #include <ZadarmaPJSIP/pjmedia-codec/opencore_amr.h>
+#include <ZadarmaPJSIP/pjmedia-codec/vid_toolbox.h>
 #include <ZadarmaPJSIP/pjmedia-codec/openh264.h>
-#include <ZadarmaPJSIP/pjmedia-codec/opus.h>
 #include <ZadarmaPJSIP/pjmedia-codec/passthrough.h>
 #include <ZadarmaPJSIP/pjmedia-codec/silk.h>
-#include <ZadarmaPJSIP/pjmedia-codec/speex.h>
-#include <ZadarmaPJSIP/pjmedia-codec/vid_toolbox.h>
-#include <ZadarmaPJSIP/pjmedia-codec/vpx.h>
+#include <ZadarmaPJSIP/pjmedia-codec/opus.h>
+#include <ZadarmaPJSIP/pjmedia-codec/bcg729.h>
+
 
 #endif	/* __PJMEDIA_CODEC_PJMEDIA_CODEC_H__ */
 
