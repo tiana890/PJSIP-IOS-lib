@@ -88,8 +88,7 @@ typedef struct pjsip_sub_state_hdr
 
     pj_str_t	    sub_state;		/**< Subscription state. */
     pj_str_t	    reason_param;	/**< Optional termination reason. */
-    unsigned	    expires_param;	/**< Expires param, or
-    					     PJSIP_EXPIRES_NOT_SPECIFIED. */
+    int		    expires_param;	/**< Expires param, or -1. */
     int		    retry_after;	/**< Retry after param, or -1. */
     pjsip_param	    other_param;	/**< Other parameters. */
 } pjsip_sub_state_hdr;
