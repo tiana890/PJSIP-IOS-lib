@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PJSIP-IOS-lib'
-  s.version          = '3.3'
+  s.version          = '3.4'
   s.summary          = 'Useful pod for PJSIP'
 
 # This description is used to generate tags and improve search results.
